@@ -12,11 +12,4 @@ function counter(state = 0, action) {
   }
 }
 
-let store = createStore(counter);
-
-// You can subscribe to the updates manually, or use bindings to your view layer.
-store.subscribe(() =>
-  console.log(store.getState())
-);
-
-export default store;
+export default createStore(counter);
